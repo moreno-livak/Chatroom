@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Ninja Chat</title>
+</head>
+<body>
+
+  <div class="chat-rooms">
+    <h3>CHATROOMS:</h3>
+    <div class="buttons">
+      <button class="b1" id="general"># General</button>
+      <button class="b2" id="gaming"># Programming</button>
+      <button class="b3" id="music"># Design</button>
+      <button class="b4" id="ninjas"># Gaming</button>
+    </div>
+  </div>
+
+
+  <!-- container & title -->
+  <div class="container">
+
+    <!-- chat list / window -->
+    <div class="chat-window">
+      <ul class="chat-list list-group"></ul>
+    </div>
+    
+    <div class="decoration"></div>
+
+    <!-- new chat form -->
+    <form class="new-chat my-3">
+      <div class="message-group">
+        <input type="text" id="message" class="form-control" placeholder="Nachricht eingeben" required>
+        <input type="submit" class="btn" value="Senden">
+      </div>
+    </form>
+
+    <!-- update name form -->
+    <form class="new-name my-3">
+      <div class="name-group">
+        <input type="text" id="name" class="form-control" placeholder="Name angeben" required>
+        <input type="submit" class="btn" value="Update">
+      </div>
+      <div class="update-mssg"></div>
+    </form>
+  </div>
+
+
+  <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.27.1/date_fns.min.js'></script>
+  <script src="dist/bundle.js"></script>
+
+</body>
+</html>
