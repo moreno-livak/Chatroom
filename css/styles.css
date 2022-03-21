@@ -179,4 +179,14 @@ input[type=text]:focus {
   padding: 1.5em 1em 1.5em 1em;
   border: none;
 }
+
+.update-mssg {
+  color: #b8b8b8;
+  margin: 1em 0 2em 0;
+  font-size: .9em;
+}
+
+.update-mssg span {
+  font-weight: bold;
+}
 /*# sourceMappingURL=styles.css.map */

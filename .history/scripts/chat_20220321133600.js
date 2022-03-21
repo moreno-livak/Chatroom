@@ -48,7 +48,7 @@ class Chatroom {
         if(change.type === 'added'){
           items.push({ ...change.doc.data(), id: change.doc.id })
       }})    
-      callback(items);
+      callback(items.filter(length = 10));
       console.log(items);
     });
   }

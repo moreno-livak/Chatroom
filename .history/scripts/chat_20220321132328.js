@@ -51,7 +51,7 @@ class Chatroom {
       callback(items);
       console.log(items);
     });
-  }
+}
 
   updateName(username){
     this.username = username;
@@ -124,7 +124,7 @@ newNameForm.addEventListener('submit', e => {
   chatroom.updateName(newName);
   newNameForm.reset();
   // Update Message kurz anzeigen
-  updateMssg.innerHTML = `<span>${newName}</span> wurde als dein Name gespeichert!`;
+  updateMssg.innerText = `${newName} wurde als dein Name gespeichert!`;
   setTimeout(() => updateMssg.innerText = '', 4000);
 });
 
