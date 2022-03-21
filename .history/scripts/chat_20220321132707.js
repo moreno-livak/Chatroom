@@ -51,7 +51,7 @@ class Chatroom {
       callback(items);
       console.log(items);
     });
-  }
+}
 
   updateName(username){
     this.username = username;
